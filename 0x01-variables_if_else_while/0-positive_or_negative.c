@@ -1,9 +1,9 @@
 int x;
 if (x=0){
-	printf("is zero\n")
+	printf("is zero\n");
 }
 if else (x>0){
-	printf("is positive\n")
+	printf("is positive\n");
 }else {
-	printf("is negative\n")
+	printf("is negative\n");
 }
