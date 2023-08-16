@@ -1,16 +1,14 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-void print_alphabet(void){
-    char alphabet = 'a';
-    while (alphabet <= 'z'){
-        printf("%c \n", alphabet);
-        alphabet++;
-    }
-    printf("\n");
+#include "main.h"
+/**
+ * print_alphabet - print all alphabet in lowercase
+ */
+void print_alphabet(void)
+{
+char alphabet = 'a';
+while (alphabet <= 'z')
+{
+_putchar(alphabet);
+alphabet++;
 }
-int main(void)
-{	
-    print_alphabet();
-    return 0;
+_putchar('\n');
 }
