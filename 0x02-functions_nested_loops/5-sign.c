@@ -1,41 +1,26 @@
-#include <stdio.h>
-#include <stdlib.h>
-int print_sign(int n){
-    if (n > 0){
-        return 1;
-        printf("+");
-    }else if (n == 0){
-        return 0;
-        printf("0");
-    }else {
-        return -1;
-        printf("-");
-    }
-}
-int main(void)
+#include "main.h"
+/**
+ * print_sign - prints the sign of a number
+ * @n: the int to check
+ * Return: 1 and prints + if n is greater than zero
+ * 0 and prints 0 if n is zero
+ * -1 and prints - if n is less than zero
+ */
+int print_sign(int n)
 {
-    int r;
-
-    r = print_sign(98);
-    _putchar(',');
-    _putchar(' ');
-    _putchar(r + '0');
-    _putchar('\n');
-    r = print_sign(0);
-    _putchar(',');
-    _putchar(' ');
-    _putchar(r + '0');
-    _putchar('\n');
-    r = print_sign(0xff);
-    _putchar(',');
-    _putchar(' ');
-    _putchar(r + '0');
-    _putchar('\n');
-    r = print_sign(-1);
-    _putchar(',');
-    _putchar(' ');
-    _putchar(r + '0');
-    _putchar('\n');
-    
-    return 0;
+if (n > 0)
+{
+return (1);
+_putchar('+');
+}
+else if (n == 0)
+{
+return (0);
+_putchar('0');
+}
+else
+{
+return (-1);
+_putchar('-');
+}
 }
