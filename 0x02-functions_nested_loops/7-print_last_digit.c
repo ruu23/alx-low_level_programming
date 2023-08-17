@@ -1,19 +1,11 @@
-#include <stdio.h>
-#include <stdlib.h>
-int print_last_digit(int num){
-    int digits = num % 10;
-    return digits;
-}
-int main(void)
+#include "main.h"
+/**
+ * print_last_digit - prints the last digit of a number
+ * @n: the int to extract the last digit from
+ * Return: value of the last digit
+ */
+int print_last_digit(int n)
 {
-     int r;
-
-    r = print_last_digit(98);
-    printf("%d\n", r);
-    r = print_last_digit(0);
-    printf("%d\n", r);
-    r = print_last_digit(-1024);
-    printf("%d\n", r);
-
-    return 0;
+int digits = n % 10;
+return (digits);
 }
