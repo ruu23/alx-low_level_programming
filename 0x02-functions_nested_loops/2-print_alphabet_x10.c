@@ -1,18 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-void print_alphabet_x10(void){
-    for (int i = 1; i <= 10; i++){
-        char alphabet = 'a';
-    while (alphabet <= 'z'){
-        printf("%c ", alphabet);
-        alphabet++;
-    }
-    printf("\n");
-    }
-}
-int main(void)
+#include "main.h"
+/**
+ * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
+ * followed by a new line
+ */
+void print_alphabet_x10(void)
 {
-    print_alphabet_x10();
-    return 0;
+char ch;
+int i;
+i = 0;
+while (i < 10)
+{
+ch = 'a';
+while (ch <= 'z')
+{
+_putchar(ch);
+ch++;
+}
+_putchar('\n');
+i++;
+}
 }
