@@ -16,7 +16,7 @@ int check_palindrome(char *s, int left, int right)
 	}
 	else if (s[left] == s[right])
 	{
-		return check_palindrome(s, left + 1, right - 1);
+		return (check_palindrome(s, left + 1, right - 1));
 	}
 	else
 	{
@@ -24,13 +24,14 @@ int check_palindrome(char *s, int left, int right)
 	}
 }
 /**
- * is_palindrome - function 
+ * is_palindrome - function
  * @s: parameter
  * Return: 0, 1
  */
 int is_palindrome(char *s)
 {
 	int length = strlen(s);
+
 	if (length == 0 || length == 1)
 	{
 		return (1);
