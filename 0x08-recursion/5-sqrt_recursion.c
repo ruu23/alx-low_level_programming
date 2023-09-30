@@ -15,9 +15,9 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * actual_sqrt_recursion - recurses to find sqrt
+ * check_sqrt_recursion - recurses to find sqrt
  * @n: int
- * @i: int
+ * @x: int
  * Return: sqrt
  */
 int check_sqrt_recursion(int n, int x)
