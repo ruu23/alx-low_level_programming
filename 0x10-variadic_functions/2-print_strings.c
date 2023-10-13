@@ -19,17 +19,16 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(args, n);
 	for (i = 0; i < n; i++)
 	{
-		name = va_arg(args, const char *);
-		printf("%s", name);
-		if (separator != NULL && i < n - 1)
-		{
-			printf("%s", separator);
-		}
+		name = va_arg(args, char *);
+		if (!name)
+			name = "(nil)";
+		if (!separator)
+			printf("%s", name);
+		else if (separator && i == 0)
+			printf("%s", name);
 		else
-		{
-			printf("(nail)");
-		}
+			printf("%s%s", separator, name);
 	}
-	va_end(args);
 	printf("\n");
+	va_end(args);
 }
